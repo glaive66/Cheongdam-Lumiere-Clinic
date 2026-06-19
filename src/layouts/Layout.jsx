@@ -1,0 +1,20 @@
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import FloatingButtons from '../components/FloatingButtons';
+
+const Layout = () => {
+  return (
+    <>
+      <Header />
+      <main style={{ minHeight: '80vh' }}>
+        <Outlet />
+      </main>
+      <Footer />
+      <FloatingButtons />
+    </>
+  );
+};
+
+export default Layout;
